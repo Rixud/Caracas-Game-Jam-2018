@@ -36,7 +36,7 @@ public class sharpWeapon : MonoBehaviour {
         }
 
     }
-     void isSharp()
+     public void isSharp()
     {
         sharpMeter = 0;
         sharpBar.fillAmount = sharpMeter / goodSharp;

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class playerToControllerAssigner : MonoBehaviour {
 
-    private List<int> assignedControllers = new List<int>();
+    //private List<int> assignedControllers = new List<int>();
     
 	// Use this for initialization
 	void Start () {

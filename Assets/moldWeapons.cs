@@ -1,11 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class moldWeapons : MonoBehaviour {
 
     public GameObject buttonB, buttonX, weaponBButton0, weaponXButton0, weaponBButton1, weaponXButton1, weaponBButton2, weaponXButton2, voidPrefab;
     //private playerStatus dummy;
+    public bool stillWarm;
+    public Image moldBar;
+    public GameObject fill, fillBG;
+    public float moldForce, maxMold, mold;
+    public int hittingXB = 0;
+    public metalStats metalSt;
 
     // Use this for initialization
     void Start ()
@@ -18,18 +25,70 @@ public class moldWeapons : MonoBehaviour {
         weaponXButton1.SetActive(false);
         weaponBButton2.SetActive(false);
         weaponXButton2.SetActive(false);
+        fill.SetActive(false);
+        fillBG.SetActive(false);
+        stillWarm = false;
     }
 	
 	// Update is called once per frame
-	void Update () {
-		
+	void Update ()
+    {
+        if(Input.GetKeyDown(KeyCode.Joystick2Button1))
+        {
+            if(hittingXB == 0)
+            {
+                hittingXB = 1;
+                moldBar.color = Color.red;
+            }
+            else if (hittingXB == 2)
+            {
+                hittingXB = 1;
+                moldBar.color = Color.red;
+                mold = 0;
+            }
+
+            if (Input.GetKeyDown(KeyCode.Joystick2Button2))
+            {
+                if (hittingXB == 0)
+                {
+                    hittingXB = 2;
+                    moldBar.color = Color.blue;
+
+                }
+                else if (hittingXB == 1)
+                {
+                    hittingXB = 2;
+                    moldBar.color = Color.blue;
+                    mold = 0;
+                }
+
+            }
+		if (stillWarm && (hittingXB == 1||hittingXB == 2))
+            {
+                mold += moldForce;
+                moldBar.fillAmount = mold / maxMold;
+            }
+       
+                
+            if (mold > maxMold)
+            {
+                isMold();
+
+
+
+            }
+           
+        }
 	}
 
     void OnTriggerEnter(Collider col)
     {
-        if(col.gameObject.tag == "Player_1" || col.gameObject.tag == "Player_2")
+
+
+        if (col.gameObject.tag == "Player_1" || col.gameObject.tag == "Player_2")
         {
             col.gameObject.transform.GetChild(2).GetComponent<playerStatus>().setMetalState();
+            metalSt = col.gameObject.transform.GetChild(2).GetComponent<playerStatus>().metalSt;
         }
         //Debug.Log(col.gameObject);
         buttonB.SetActive(true);
@@ -78,9 +137,29 @@ public class moldWeapons : MonoBehaviour {
 
     void OnTriggerStay(Collider col)
     {
-        if (col.gameObject.transform.GetChild(2).GetComponent<playerStatus>().metalSt.warm)
+        if (col.gameObject.transform.GetChild(2).GetComponent<playerStatus>().metalSt.warm && (!col.gameObject.transform.GetChild(2).GetComponent<playerStatus>().metalSt.mold_1 || col.gameObject.transform.GetChild(2).GetComponent<playerStatus>().metalSt.mold_2))
         {
-
+            stillWarm = true;
+        }
+        else
+        {
+            stillWarm = false;
         }
     }
+
+    public void isMold()
+    {
+        mold = 0;
+        if (hittingXB == 1)
+        {
+            metalSt.mold_1 = true;
+        }
+        else if (hittingXB == 2)
+        {
+            metalSt.mold_2 = true;
+        }
+        // Mandar update al Metal
+        moldBar.fillAmount = mold / maxMold;
+    }
+
 }

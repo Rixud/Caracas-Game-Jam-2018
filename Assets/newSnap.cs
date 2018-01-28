@@ -6,7 +6,7 @@ public class newSnap : MonoBehaviour
 {
     public GameObject snapPoint;
     public bool isSnaped, pressA, pressB, pressX;
-    private Collider collider;
+    //private Collider collider;
     public int buttonSelected;
 
     // Use this for initialization
@@ -14,7 +14,7 @@ public class newSnap : MonoBehaviour
     {
 
         isSnaped = false;
-        collider = GetComponent<Collider>();
+        //collider = GetComponent<Collider>();
 
     }
 

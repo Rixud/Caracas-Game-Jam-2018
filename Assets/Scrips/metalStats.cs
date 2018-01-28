@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class metalStats : MonoBehaviour {
     public float temperature, maxTemp, coldFactor;
-    public bool warm, mold, sharp;
+    public bool warm, mold_1, mold_2, sharp;
     public Image tempBar;
     public GameObject bar;
     public faceCameraUpdate cameraI;
@@ -14,7 +14,8 @@ public class metalStats : MonoBehaviour {
     // Use this for initialization
     void Start () {
         warm = false;
-        mold = false;
+        mold_1 = false;
+        mold_2 = false;
         sharp = false;
         coldFactor = 5.0f;
         maxTemp = 100;
@@ -45,7 +46,8 @@ public class metalStats : MonoBehaviour {
 
     public void getMold()
     {
-        mold = true;
+        mold_1 = true;
+        mold_2 = true;
     }
 
     public void getSharp()
