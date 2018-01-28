@@ -76,7 +76,7 @@ public class dropOnTable : MonoBehaviour {
                 #region A_1
                 if (col.tag == "Player_1" && Input.GetKeyUp(KeyCode.Joystick1Button0) && playerStatus_1.itemInHand.tag == "Void")
                 {
-                    Debug.Log("1 Intento Agarrar de MESA" + Time.timeSinceLevelLoad);
+                    Debug.Log("1 Intento Agarrar de MESA"  + objectOn + " y deja un void... ");
                     objectOn.transform.position = hand_1.transform.position;
                     objectOn.transform.parent = hand_1.transform;
                     playerStatus_1.itemInHand = objectOn;
@@ -90,7 +90,7 @@ public class dropOnTable : MonoBehaviour {
                 #region A_2
                 if (col.tag == "Player_2" && Input.GetKeyUp(KeyCode.Joystick2Button0) && playerStatus_2.itemInHand.tag == "Void")
                 {
-                    Debug.Log("2 Intento Agarrar de MESA" + Time.timeSinceLevelLoad);
+                    Debug.Log("2 Intento Agarrar de MESA " + objectOn + " y deja un void... ");
                     objectOn.transform.position = hand_2.transform.position;
                     objectOn.transform.parent = hand_2.transform;
                     playerStatus_2.itemInHand = objectOn;

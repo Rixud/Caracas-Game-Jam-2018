@@ -24,7 +24,7 @@ public class metalPicker : MonoBehaviour {
         if (!enterFor)
         {
             timer += Time.deltaTime;
-            if (timer > 0.7)
+            if (timer > 0.1)
             {
                 timer = 0;
                 enterFor = true;
@@ -53,10 +53,11 @@ public class metalPicker : MonoBehaviour {
     {
         if (enterFor)
         {
-            enterFor = false;
+            
             #region A
             if (col.tag == "Player_1" && Input.GetKeyDown(KeyCode.Joystick1Button0))
             {
+                enterFor = false;
                 p1Status.destroyMyChilds();
                 //p1Status.handBusy = true;
                 metalPicked = (GameObject)Instantiate(prefabMedium, p1Status.hand.transform.position, p1Status.hand.transform.rotation);
@@ -71,6 +72,7 @@ public class metalPicker : MonoBehaviour {
             #region B
             if (col.tag == "Player_1" && Input.GetKeyDown(KeyCode.Joystick1Button1))
             {
+                enterFor = false;
                 p1Status.destroyMyChilds();
                 //p1Status.handBusy = true;
 
@@ -85,8 +87,10 @@ public class metalPicker : MonoBehaviour {
 
             #region X
             //Debug.Log(this.name+" "+col.tag);
+            
             if (col.tag == "Player_1" && Input.GetKeyDown(KeyCode.Joystick1Button2))
             {
+                enterFor = false;
                 p1Status.destroyMyChilds();
                 //p1Status.handBusy = true;
                 metalPicked = (GameObject)Instantiate(prefabSmall, p1Status.hand.transform.position, p1Status.hand.transform.rotation);

@@ -21,11 +21,11 @@ public class playerStatus : MonoBehaviour {
 
     public void destroyMyChilds()
     {
-        Debug.Log("Estamos destruyendo");
+        //Debug.Log("Estamos destruyendo");
 
         foreach (Transform child in transform)
         {
-            Debug.Log("Destruyendo " + child);
+            Debug.Log("Destruyendo " + child + Time.deltaTime);
             GameObject.Destroy(child.gameObject);
         }
         //handBusy = false;
