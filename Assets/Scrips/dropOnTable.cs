@@ -26,7 +26,7 @@ public class dropOnTable : MonoBehaviour {
         if (!enterFor)
         {
             timer += Time.deltaTime; 
-            if(timer>0.7)
+            if(timer>0.3)
             {
                 timer = 0;
                 enterFor = true;
@@ -39,71 +39,53 @@ public class dropOnTable : MonoBehaviour {
     {
         if (enterFor)
         {
-            if (!objecOnTable)
+            if (col.tag == "Player_1" && Input.GetKeyUp(KeyCode.Joystick1Button0) && playerStatus_1.itemInHand.tag != "Void" && objectOn.tag == "Void")
             {
-                
-                #region A_1
-                if (col.tag == "Player_1" && Input.GetKeyUp(KeyCode.Joystick1Button0) && playerStatus_1.itemInHand.tag != "Void")
-                {
-                    Debug.Log("1 Intenta Dejar en MESA" + Time.timeSinceLevelLoad);
-                    playerStatus_1.itemInHand.transform.position = new Vector3(tablePosition.position.x, tablePosition.position.y, tablePosition.position.z);
-                    playerStatus_1.itemInHand.transform.parent = null;
-                    objectOn = playerStatus_1.itemInHand.gameObject;
-                    playerStatus_1.itemInHand = voidPrefab;
-                    objecOnTable = true;
-                    enterFor = false;
-                }
+                Debug.Log("1 Intenta Dejar en MESA" + Time.timeSinceLevelLoad);
+                playerStatus_1.itemInHand.transform.position = new Vector3(tablePosition.position.x, tablePosition.position.y, tablePosition.position.z);
+                playerStatus_1.itemInHand.transform.parent = null;
+                objectOn = playerStatus_1.itemInHand.gameObject;
+                playerStatus_1.itemInHand = voidPrefab;
+                objecOnTable = true;
+                enterFor = false;
+            }
+            else if (col.tag == "Player_2" && Input.GetKeyUp(KeyCode.Joystick2Button0) && playerStatus_2.itemInHand.tag != "Void" && objectOn.tag == "Void")
+            {
+                Debug.Log("2 Intenta Dejar en MESA" + Time.timeSinceLevelLoad);
+                playerStatus_2.itemInHand.transform.position = new Vector3(tablePosition.position.x, tablePosition.position.y, tablePosition.position.z);
+                playerStatus_2.itemInHand.transform.parent = null;
+                objectOn = playerStatus_2.itemInHand.gameObject;
+                playerStatus_2.itemInHand = voidPrefab;
+                objecOnTable = true;
+                enterFor = false;
 
-                #endregion
+            }
+            else if (col.tag == "Player_1" && Input.GetKeyUp(KeyCode.Joystick1Button0) && playerStatus_1.itemInHand.tag == "Void" && objectOn.tag != "Void")
+            {
+                Debug.Log("1 Intento Agarrar de MESA" + objectOn + " y deja un void... ");
+                objectOn.transform.position = hand_1.transform.position;
+                objectOn.transform.parent = hand_1.transform;
+                playerStatus_1.itemInHand = objectOn;
+                objectOn = voidPrefab;
+                objecOnTable = false;
+                enterFor = false;
 
-                #region A_2
-                if (col.tag == "Player_2" && Input.GetKeyUp(KeyCode.Joystick2Button0) && playerStatus_2.itemInHand.tag != "Void")
-                {
-                    Debug.Log("2 Intenta Dejar en MESA" + Time.timeSinceLevelLoad);
-                    playerStatus_2.itemInHand.transform.position = new Vector3(tablePosition.position.x, tablePosition.position.y, tablePosition.position.z);
-                    playerStatus_2.itemInHand.transform.parent = null;
-                    objectOn = playerStatus_2.itemInHand.gameObject;
-                    playerStatus_2.itemInHand = voidPrefab;
-                    objecOnTable = true;
-                    enterFor = false;
-
-                }
-                #endregion
+            }
+            else if (col.tag == "Player_2" && Input.GetKeyUp(KeyCode.Joystick2Button0) && playerStatus_2.itemInHand.tag == "Void" && objectOn.tag != "Void")
+            {
+                Debug.Log("2 Intento Agarrar de MESA " + objectOn + " y deja un void... ");
+                objectOn.transform.position = hand_2.transform.position;
+                objectOn.transform.parent = hand_2.transform;
+                playerStatus_2.itemInHand = objectOn;
+                objectOn = voidPrefab;
+                objecOnTable = false;
+                enterFor = false;
             }
             else
-
             {
-                #region A_1
-                if (col.tag == "Player_1" && Input.GetKeyUp(KeyCode.Joystick1Button0) && playerStatus_1.itemInHand.tag == "Void")
-                {
-                    Debug.Log("1 Intento Agarrar de MESA"  + objectOn + " y deja un void... ");
-                    objectOn.transform.position = hand_1.transform.position;
-                    objectOn.transform.parent = hand_1.transform;
-                    playerStatus_1.itemInHand = objectOn;
-                    objectOn = voidPrefab;
-                    objecOnTable = false;
-                    enterFor = false;
-                    
-                }
-
-                #endregion
-                #region A_2
-                if (col.tag == "Player_2" && Input.GetKeyUp(KeyCode.Joystick2Button0) && playerStatus_2.itemInHand.tag == "Void")
-                {
-                    Debug.Log("2 Intento Agarrar de MESA " + objectOn + " y deja un void... ");
-                    objectOn.transform.position = hand_2.transform.position;
-                    objectOn.transform.parent = hand_2.transform;
-                    playerStatus_2.itemInHand = objectOn;
-                    objectOn = voidPrefab;
-                    objecOnTable = false;
-                    enterFor = false;
-                }
-
-                #endregion
+                Debug.Log("No deja hacer un co!!!!");
             }
         }
-        
-
     }
     void OnTriggerEnter(Collider col)
     {

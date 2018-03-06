@@ -8,6 +8,7 @@ public class thirdPersonController : MonoBehaviour {
 
     public float speedMovement;
     public Vector3 speed;
+    public Animator anim;
 
     //private int controllerNumber;
 
@@ -21,6 +22,7 @@ public class thirdPersonController : MonoBehaviour {
 	void Update () {
         speed = new Vector3(Input.GetAxis("Horizontal") * speedMovement, 0, Input.GetAxis("Vertical") * speedMovement);
         charController.Move(speed * Time.deltaTime);
+        
         if (speed != Vector3.zero)
         {
             Quaternion quat = Quaternion.LookRotation(speed);
@@ -54,6 +56,12 @@ public class thirdPersonController : MonoBehaviour {
             //Debug.Log("apretas B en J1");
         }
 
- 
+        if (speed.magnitude != 0)
+        {
+            anim.SetBool("move", true);
+        }
+        else anim.SetBool("move", false);
+
+
     }
 }

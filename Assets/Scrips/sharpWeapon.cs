@@ -9,7 +9,8 @@ public class sharpWeapon : MonoBehaviour {
     public float sharpForce, sharpMeter, goodSharp;
     public Image sharpBar;
     public GameObject fill, fillBG;
-    
+    public metalStats metalSt;
+    public scoreUI score;
 
     // Use this for initialization
     void Start () {
@@ -23,7 +24,7 @@ public class sharpWeapon : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (grindSpin.isSpinning && Input.GetKeyDown(KeyCode.Joystick1Button2))
+        if (grindSpin.isSpinning && Input.GetKeyDown(KeyCode.Joystick1Button2) && (metalSt.mold_1 || metalSt.mold_2) && !metalSt.sharp )
         {
             sharpMeter += sharpForce;
             sharpBar.fillAmount = sharpMeter / goodSharp;
@@ -32,6 +33,7 @@ public class sharpWeapon : MonoBehaviour {
         if (sharpMeter > goodSharp)
         {
             isSharp();
+            score.AddGold();
 
         }
 
@@ -40,12 +42,15 @@ public class sharpWeapon : MonoBehaviour {
     {
         sharpMeter = 0;
         sharpBar.fillAmount = sharpMeter / goodSharp;
+        metalSt.sharp = true;
+        metalSt.updateGraphics();
 
         //Spawn o Cambio de Arma
     }
 
     void OnTriggerEnter(Collider col)
     {
+        metalSt = col.gameObject.transform.GetChild(2).GetComponent<playerStatus>().metalSt;
         fill.SetActive(true);
         fillBG.SetActive(true);
     }

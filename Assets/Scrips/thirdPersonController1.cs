@@ -8,6 +8,7 @@ public class thirdPersonController1 : MonoBehaviour {
 
     public float speedMovement;
     public Vector3 speed;
+    public Animator anim;
 
     private int controllerNumber;
 
@@ -50,6 +51,11 @@ public class thirdPersonController1 : MonoBehaviour {
            // Debug.Log("apretas B en J2");
         }
 
- 
+        if (speed.magnitude != 0)
+        {
+            anim.SetBool("move", true);
+        }
+        else anim.SetBool("move", false);
+
     }
 }

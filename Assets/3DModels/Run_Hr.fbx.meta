@@ -1,0 +1,252 @@
+fileFormatVersion: 2
+guid: b41611d3ee5e53044850aa3c2ecd0ab8
+timeCreated: 1517150159
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: camisa_polySurface1
+    100002: cuerpo_polySurface1
+    100004: delantal_polySurface1
+    100006: Geo_Final
+    100008: gorro_polySurface1
+    100010: Group59991
+    100012: Group59992
+    100014: Group6278
+    100016: Hr_barba_01
+    100018: Hr_barba_02
+    100020: Hr_barba_end
+    100022: Hr_Brazo_L
+    100024: Hr_Brazo_R
+    100026: Hr_Cadera
+    100028: Hr_Ceja_01_L
+    100030: Hr_Ceja_02_L
+    100032: Hr_Ceja_02_R
+    100034: Hr_Ceja_end
+    100036: Hr_Ceja_end 1
+    100038: Hr_Cuello
+    100040: Hr_Head01
+    100042: Hr_Head_end
+    100044: Hr_Hombro_L
+    100046: Hr_Hombro_R
+    100048: Hr_indice_01_L
+    100050: Hr_indice_01_R
+    100052: Hr_indice_02_L
+    100054: Hr_indice_02_R
+    100056: Hr_indice_end_L
+    100058: Hr_indice_end_R
+    100060: Hr_Mano_L
+    100062: Hr_Mano_R
+    100064: Hr_medio_01_L
+    100066: Hr_medio_01_R
+    100068: Hr_medio_02_L
+    100070: Hr_medio_02_R
+    100072: Hr_medio_end_L
+    100074: Hr_medio_end_R
+    100076: Hr_menq_01_L
+    100078: Hr_menq_01_R
+    100080: Hr_menq_02_L
+    100082: Hr_menq_02_R
+    100084: Hr_menq_end_L
+    100086: Hr_menq_end_R
+    100088: Hr_Mun_L
+    100090: Hr_Mun_R
+    100092: Hr_Pecho
+    100094: Hr_Pie_01_L
+    100096: Hr_Pie_01_R
+    100098: Hr_Pie_02_L
+    100100: Hr_Pie_02_R
+    100102: Hr_Pie_03_L
+    100104: Hr_Pie_03_R
+    100106: Hr_Pie_end_L
+    100108: Hr_Pie_end_R
+    100110: Hr_pulga_01_L
+    100112: Hr_pulga_01_R
+    100114: Hr_pulga_02_L
+    100116: Hr_pulga_02_R
+    100118: Hr_pulga_end_L
+    100120: Hr_pulga_end_R
+    100122: Hr_Root
+    100124: manga_polySurface1
+    100126: manga_polySurface2
+    100128: mano_polySurface1
+    100130: mano_polySurface2
+    100132: polySurface1
+    100134: //RootNode
+    100136: zapato_polySurface1
+    100138: zapato_polySurface2
+    400000: camisa_polySurface1
+    400002: cuerpo_polySurface1
+    400004: delantal_polySurface1
+    400006: Geo_Final
+    400008: gorro_polySurface1
+    400010: Group59991
+    400012: Group59992
+    400014: Group6278
+    400016: Hr_barba_01
+    400018: Hr_barba_02
+    400020: Hr_barba_end
+    400022: Hr_Brazo_L
+    400024: Hr_Brazo_R
+    400026: Hr_Cadera
+    400028: Hr_Ceja_01_L
+    400030: Hr_Ceja_02_L
+    400032: Hr_Ceja_02_R
+    400034: Hr_Ceja_end
+    400036: Hr_Ceja_end 1
+    400038: Hr_Cuello
+    400040: Hr_Head01
+    400042: Hr_Head_end
+    400044: Hr_Hombro_L
+    400046: Hr_Hombro_R
+    400048: Hr_indice_01_L
+    400050: Hr_indice_01_R
+    400052: Hr_indice_02_L
+    400054: Hr_indice_02_R
+    400056: Hr_indice_end_L
+    400058: Hr_indice_end_R
+    400060: Hr_Mano_L
+    400062: Hr_Mano_R
+    400064: Hr_medio_01_L
+    400066: Hr_medio_01_R
+    400068: Hr_medio_02_L
+    400070: Hr_medio_02_R
+    400072: Hr_medio_end_L
+    400074: Hr_medio_end_R
+    400076: Hr_menq_01_L
+    400078: Hr_menq_01_R
+    400080: Hr_menq_02_L
+    400082: Hr_menq_02_R
+    400084: Hr_menq_end_L
+    400086: Hr_menq_end_R
+    400088: Hr_Mun_L
+    400090: Hr_Mun_R
+    400092: Hr_Pecho
+    400094: Hr_Pie_01_L
+    400096: Hr_Pie_01_R
+    400098: Hr_Pie_02_L
+    400100: Hr_Pie_02_R
+    400102: Hr_Pie_03_L
+    400104: Hr_Pie_03_R
+    400106: Hr_Pie_end_L
+    400108: Hr_Pie_end_R
+    400110: Hr_pulga_01_L
+    400112: Hr_pulga_01_R
+    400114: Hr_pulga_02_L
+    400116: Hr_pulga_02_R
+    400118: Hr_pulga_end_L
+    400120: Hr_pulga_end_R
+    400122: Hr_Root
+    400124: manga_polySurface1
+    400126: manga_polySurface2
+    400128: mano_polySurface1
+    400130: mano_polySurface2
+    400132: polySurface1
+    400134: //RootNode
+    400136: zapato_polySurface1
+    400138: zapato_polySurface2
+    4300000: mano_polySurface2
+    4300002: manga_polySurface2
+    4300004: Group59992
+    4300006: zapato_polySurface2
+    4300008: zapato_polySurface1
+    4300010: Group6278
+    4300012: mano_polySurface1
+    4300014: manga_polySurface1
+    4300016: gorro_polySurface1
+    4300018: delantal_polySurface1
+    4300020: cuerpo_polySurface1
+    4300022: camisa_polySurface1
+    4300024: polySurface1
+    4300026: Group59991
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: camisa_polySurface1
+    13700002: cuerpo_polySurface1
+    13700004: delantal_polySurface1
+    13700006: gorro_polySurface1
+    13700008: Group59991
+    13700010: Group59992
+    13700012: Group6278
+    13700014: manga_polySurface1
+    13700016: manga_polySurface2
+    13700018: mano_polySurface1
+    13700020: mano_polySurface2
+    13700022: polySurface1
+    13700024: zapato_polySurface1
+    13700026: zapato_polySurface2
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 100
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

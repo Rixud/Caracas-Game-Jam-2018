@@ -17,8 +17,8 @@ public class dropOnOven : MonoBehaviour {
     void Start () {
         metalInOven = false;
         warmTime = 0;
-		
-	}
+        
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -30,8 +30,9 @@ public class dropOnOven : MonoBehaviour {
             }
             else
             {
-                metalHot = true;
+                //metalHot = true;
                 metalSt.getWarm();
+                metalSt.updateGraphics();
 
             }
             
@@ -41,42 +42,35 @@ public class dropOnOven : MonoBehaviour {
 
     void OnTriggerStay(Collider col)
     {
-        if(metalPick.metalPicked.tag == "Metal" && !metalInOven)
+        if (col.tag == "Player_1" && Input.GetKeyDown(KeyCode.Joystick1Button0) && player1.itemInHand.tag == "Metal" && metalOnOven.tag == "Void")
         {
-            #region A
-            if (col.tag == "Player_1" && Input.GetKeyDown(KeyCode.Joystick1Button0))
-            {
+            
                 Debug.Log("Intento Dejar en el Horno");
                 metalPick.metalPicked.transform.position = new Vector3(ovenPosition.position.x, ovenPosition.position.y, ovenPosition.position.z);
                 metalPick.metalPicked.transform.parent = null;
                 metalOnOven = metalPick.metalPicked.gameObject;
                 metalSt = metalOnOven.GetComponent<metalStats>();
-                
+
                 player1.itemInHand = voidPrefab;
                 metalInOven = true;
-            }
 
-            #endregion
-        }
+            
+        }else if (col.tag == "Player_1" && Input.GetKeyDown(KeyCode.Joystick1Button0) && metalSt.warm && player1.itemInHand.tag == "Void" && metalOnOven.tag == "Metal")
+             {
+               
+                    Debug.Log("Intento Agarra del Horno");
+                    player1.itemInHand = metalOnOven;
+                    metalOnOven.transform.position = hand.transform.position;
+                    metalOnOven.transform.parent = hand.transform;
 
-        if (metalInOven && metalHot)
+                    metalOnOven = voidPrefab;
+                    warmTime = 0;
+                    metalInOven = false;
+                    //metalHot = false;
+                }else
         {
-            #region A
-            if (col.tag == "Player_1" && Input.GetKeyDown(KeyCode.Joystick1Button0))
-            {
-                Debug.Log("Intento Agarra del Horno");
-                player1.itemInHand = metalOnOven;
-                metalOnOven.transform.position = hand.transform.position;
-                metalOnOven.transform.parent = hand.transform;
-
-                metalOnOven = voidPrefab;
-                warmTime = 0;
-                metalInOven = false;
-            }
-
-            #endregion
+           // Debug.Log("EL PUTO HORNO TIENE UN PEO");
         }
-
     }
 
 

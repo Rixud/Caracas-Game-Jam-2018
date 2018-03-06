@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class playerStatus : MonoBehaviour {
     //public bool handBusy;
-    public GameObject hand, itemInHand;
+    public GameObject hand, itemInHand, instaPrefab, voidPrefab;
     public metalStats metalSt;
+    //public Transform handTransform;
 
 
 
@@ -38,5 +39,13 @@ public class playerStatus : MonoBehaviour {
             metalSt = itemInHand.GetComponent<metalStats>();
         }
        
+    }
+
+    public void instaChild()
+    {
+        instaPrefab = (GameObject)Instantiate(voidPrefab, hand.transform.position, hand.transform.rotation);
+        instaPrefab.transform.parent = hand.transform;
+        itemInHand = instaPrefab;
+        //setMetalState();
     }
 }

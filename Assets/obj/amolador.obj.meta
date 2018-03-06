@@ -1,0 +1,139 @@
+fileFormatVersion: 2
+guid: a9567ea448a06314fbb6918768849bb1
+timeCreated: 1517165793
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: amolador:Amolador_amolador:pCube10_Amolador_amolador:polySurface1
+    100004: amolador:Amolador_amolador:pCube14_Amolador_amolador:polySurface1
+    100006: amolador:Amolador_amolador:pCube15_Amolador_amolador:polySurface1
+    100008: amolador:Amolador_amolador:pCube16_Amolador_amolador:polySurface1
+    100010: amolador:Amolador_amolador:pCube17_Amolador_amolador:polySurface1
+    100012: amolador:Amolador_amolador:pCube7_Amolador_amolador:polySurface1
+    100014: amolador:Amolador_amolador:pCube8_Amolador_amolador:polySurface1
+    100016: amolador:Amolador_amolador:pCube9_Amolador_amolador:polySurface1
+    100018: amolador:Amolador_amolador:pCylinder1_Amolador_amolador:polySurface1
+    100020: Amolador_pCube2
+    100022: pCylinder2_Amolador
+    400000: //RootNode
+    400002: amolador:Amolador_amolador:pCube10_Amolador_amolador:polySurface1
+    400004: amolador:Amolador_amolador:pCube14_Amolador_amolador:polySurface1
+    400006: amolador:Amolador_amolador:pCube15_Amolador_amolador:polySurface1
+    400008: amolador:Amolador_amolador:pCube16_Amolador_amolador:polySurface1
+    400010: amolador:Amolador_amolador:pCube17_Amolador_amolador:polySurface1
+    400012: amolador:Amolador_amolador:pCube7_Amolador_amolador:polySurface1
+    400014: amolador:Amolador_amolador:pCube8_Amolador_amolador:polySurface1
+    400016: amolador:Amolador_amolador:pCube9_Amolador_amolador:polySurface1
+    400018: amolador:Amolador_amolador:pCylinder1_Amolador_amolador:polySurface1
+    400020: Amolador_pCube2
+    400022: pCylinder2_Amolador
+    2300000: amolador:Amolador_amolador:pCube10_Amolador_amolador:polySurface1
+    2300002: amolador:Amolador_amolador:pCube14_Amolador_amolador:polySurface1
+    2300004: amolador:Amolador_amolador:pCube15_Amolador_amolador:polySurface1
+    2300006: amolador:Amolador_amolador:pCube16_Amolador_amolador:polySurface1
+    2300008: amolador:Amolador_amolador:pCube17_Amolador_amolador:polySurface1
+    2300010: amolador:Amolador_amolador:pCube7_Amolador_amolador:polySurface1
+    2300012: amolador:Amolador_amolador:pCube8_Amolador_amolador:polySurface1
+    2300014: amolador:Amolador_amolador:pCube9_Amolador_amolador:polySurface1
+    2300016: amolador:Amolador_amolador:pCylinder1_Amolador_amolador:polySurface1
+    2300018: Amolador_pCube2
+    2300020: pCylinder2_Amolador
+    3300000: amolador:Amolador_amolador:pCube10_Amolador_amolador:polySurface1
+    3300002: amolador:Amolador_amolador:pCube14_Amolador_amolador:polySurface1
+    3300004: amolador:Amolador_amolador:pCube15_Amolador_amolador:polySurface1
+    3300006: amolador:Amolador_amolador:pCube16_Amolador_amolador:polySurface1
+    3300008: amolador:Amolador_amolador:pCube17_Amolador_amolador:polySurface1
+    3300010: amolador:Amolador_amolador:pCube7_Amolador_amolador:polySurface1
+    3300012: amolador:Amolador_amolador:pCube8_Amolador_amolador:polySurface1
+    3300014: amolador:Amolador_amolador:pCube9_Amolador_amolador:polySurface1
+    3300016: amolador:Amolador_amolador:pCylinder1_Amolador_amolador:polySurface1
+    3300018: Amolador_pCube2
+    3300020: pCylinder2_Amolador
+    4300000: amolador:Amolador_amolador:pCube10_Amolador_amolador:polySurface1
+    4300002: amolador:Amolador_amolador:pCube14_Amolador_amolador:polySurface1
+    4300004: amolador:Amolador_amolador:pCube15_Amolador_amolador:polySurface1
+    4300006: amolador:Amolador_amolador:pCube16_Amolador_amolador:polySurface1
+    4300008: amolador:Amolador_amolador:pCube17_Amolador_amolador:polySurface1
+    4300010: amolador:Amolador_amolador:pCube7_Amolador_amolador:polySurface1
+    4300012: amolador:Amolador_amolador:pCube8_Amolador_amolador:polySurface1
+    4300014: amolador:Amolador_amolador:pCube9_Amolador_amolador:polySurface1
+    4300016: amolador:Amolador_amolador:pCylinder1_Amolador_amolador:polySurface1
+    4300018: Amolador_pCube2
+    4300020: pCylinder2_Amolador
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
